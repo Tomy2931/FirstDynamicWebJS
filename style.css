@@ -1,0 +1,244 @@
+:root{
+   --principal_color:rgb(56, 0, 70);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+html{font-size: 62.5%;}
+
+
+.div_img_logo{
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.title_logo{
+    font-size: 2.3rem;
+    color: red;
+    position: relative;
+    top: -34px;
+    right: -30px;
+    background-color: rgba(0, 0, 0, 0.832);
+    rotate: -20deg;
+    border-radius: 10px;
+    border: solid 1px red;
+}
+
+
+
+.producto{
+    background-color: rgba(173, 173, 173, 0);
+    display:flex;
+    justify-content: center;
+    background-color:var(--principal_color);
+    padding: 10px 0;
+    border-bottom: 3px solid white ;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    border-bottom: rgb(255, 255, 255) dashed 2px;
+    background-color: rgb(135, 33, 223);
+}
+.right_nav{
+    color: rgba(255, 255, 255, 0.881);
+}
+.user_nav{
+    list-style: none;
+    font-size: 1.8rem;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+.miCarritoIcon{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: -2px;
+}
+.miCarritoIcon:hover{
+    cursor: pointer;
+    
+}
+
+.number_carrito{
+    background-color: white;
+    border-radius: 100%;
+    color: rgb(0, 0, 0);
+    width: 24px;
+    height: 23px;
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    top: -15px;
+    right: 70px;
+}
+
+.img_product{
+    width: 400px;
+    height: 400px;
+    border-radius: 60px;
+}
+.precio{
+    color: white;
+    font-size: 4rem;
+    background-color: rgb(140, 78, 255);
+    border: 2px solid;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 7px;
+    width: 140px;
+    
+   
+}
+.name_product{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    text-decoration:underline;
+}
+.info_text{
+    margin-top: 110px;
+    margin-left: 20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.agregar_carrito{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    text-align: center;
+    transition: .5s;
+}
+.agregar_carrito:hover{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border: white solid 3px;
+    border-radius: 100%;
+    transition: .2s;
+}
+
+
+.discount_button{
+    width: 130px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 12px;
+    font-size: 1.6rem;
+    background-color: yellow;
+    font-weight:600;
+}
+.discount_button:hover{
+    width: 140px;
+    height: 50px;
+    border: 4px solid;
+    cursor: pointer;
+    transition: .1s;
+}
+
+
+.ventana_mi_carrito{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 81px;
+    right: 0;
+    width: 500px;
+    height: 560px;
+    border-radius: 0 0 10px 10px;
+    border: solid 5px var(--principal_color);
+    border-top: none;
+    border-right: none;
+    overflow: auto;
+
+    transition: .5s;
+    display: none;
+
+}
+.miCarrito_producto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 1px ;
+    width: 100%;
+    height: 70px;
+    font-size: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.miCarrito_imagenProducto{
+    width: 60px;
+    height: 60px;
+}
+.miCarrito_nameProducto{
+    font-size: 2rem;
+    text-decoration: underline;
+    
+}
+
+.miCarrito_precioProducto{
+    font-size: 2rem;
+    text-decoration:solid;
+}
+.delete_product{
+    width: 20px;
+    height: 20px;
+}
+.delete_product:hover{
+    cursor: pointer;
+    transition: .5s;
+    rotate: 90deg;
+}
+.acumularItemNum{
+    font-size: 1.8rem;
+}
+
+
+
+
+
+
+
+.mini_footer_mi_carrito{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:1.9rem ;
+    border-bottom: solid 2px;
+    width: 100%;
+    height: 60px;
+}
+
+.precio_final_numero{
+    font-size: 2.4rem;
+    text-decoration: underline;
+    position: relative;
+    right: 30px;
+}
+
+.ventana_button_comprar{
+    border-radius: 17px;
+    color: whitesmoke;
+    font-size: 1.7rem;
+    background-color: rgb(230, 0, 255);
+    width: 100px;
+    height: 30px;
+}
+.ventana_button_comprar:hover{
+    cursor: pointer;
+    width: 103px;
+    height: 33px;
+    transition: .2s;
+}
+
